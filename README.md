@@ -3,7 +3,7 @@
 
 Provides MongoDB 2.4 text search support for mongoose.
 
-[![Build Status](https://travis-ci.org/aheckmann/mongoose-function.png?branch=master)](http://travis-ci.org/aheckmann/mongoose-text-search)
+[![Build Status](https://travis-ci.org/aheckmann/mongoose-text-search.png?branch=master)](https://travis-ci.org/aheckmann/mongoose-text-search)
 
 ## Example:
 
