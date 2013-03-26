@@ -15,7 +15,8 @@
     "text",
     "search",
     "plugin",
-    "mongodb"
+    "mongodb",
+    "fulltext"
   ],
   "author": "Aaron Heckmann <aaron.heckmann+github@gmail.com>",
   "license": "MIT",
