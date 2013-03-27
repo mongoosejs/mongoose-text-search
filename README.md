@@ -80,8 +80,8 @@ Example:
 
 ```js
 var options = {
-    project: '-created' // do not include the `created` property
-  , filter: { likes: { $gt: 1000000 }}
+    project: '-created'                // do not include the `created` property
+  , filter: { likes: { $gt: 1000000 }} // casts queries based on schema
   , limit: 10
   , language: 'spanish'
   , lean: true
