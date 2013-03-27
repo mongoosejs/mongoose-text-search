@@ -166,6 +166,19 @@ describe('mongoose-text-search integration', function(){
     })
   })
 
+  it('supports lean', function(done){
+    model.textSearch('string', { lean: true }, function (err, res) {
+      assert.ifError(err);
+      assert.ok(res);
+      assert.ok(Array.isArray(res.results));
+      assert.equal(2, res.results.length);
+      res.results.forEach(function (result) {
+        assert.ok(!(result.obj instanceof mongoose.Document));
+      })
+      done();
+    })
+  })
+
 })
 
 // if mongoose >= 3.6.1 text index type is supported

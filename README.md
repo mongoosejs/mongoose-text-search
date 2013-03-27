@@ -74,6 +74,7 @@ For more information about these properties, read the [MongoDB documentation](ht
 - `filter`: declare an additional [query matcher](http://docs.mongodb.org/manual/reference/command/text/) using `find` syntax (arguments are cast according to the schema).
 - `limit`: [maximum number](http://docs.mongodb.org/manual/reference/command/text/) of documents (mongodb default is 100)
 - `language`: change the [search language](http://docs.mongodb.org/manual/reference/command/text/)
+- `lean`: Boolean: if true, documents are not cast to [mongoose documents](http://mongoosejs.com/docs/documents.html) (default false)
 
 Example:
 
@@ -83,6 +84,7 @@ var options = {
   , filter: { likes: { $gt: 1000000 }}
   , limit: 10
   , language: 'spanish'
+  , lean: true
 }
 
 Game.textSearch('game -mario', options, callback);
