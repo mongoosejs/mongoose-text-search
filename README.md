@@ -92,6 +92,6 @@ Game.textSearch('game -mario', options, callback);
 
 ## Notes:
 
-As of mongoose 3.6.0, text indexes must be added using the [Schema.index()](http://mongoosejs.com/docs/api.html#schema_Schema-index) method.
+As of mongoose 3.6.0, text indexes may be added using the [Schema.index()](http://mongoosejs.com/docs/api.html#schema_Schema-index) method.
 
 As of MongoDB 2.4.0, [text search](http://docs.mongodb.org/manual/applications/text-search/) is experimental/beta. As such, this functionality is not in mongoose core.
